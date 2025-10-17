@@ -1,0 +1,19 @@
+/* ABOUT PAGE */
+
+.summary {
+    font-size: 32pt;
+}
+
+.summary-content {
+    font-size: 18pt;
+}
+
+@media (max-width: 100rem) {
+    .summary {
+    font-size: 24pt;
+    }
+
+    .summary-content {
+        font-size: 12pt;
+    }    
+}
