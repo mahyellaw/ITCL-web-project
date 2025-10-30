@@ -16,15 +16,15 @@
 }
 
 .summary-content {
-    font-size: 18pt;
+    font-size: 20pt;
 }
 
-@media (max-width: 100rem) {
+@media (max-width: 95rem) {
     .summary {
     font-size: 24pt;
     }
 
     .summary-content {
-        font-size: 20pt;
+        font-size: 18pt;
     }    
 }

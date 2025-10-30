@@ -5,7 +5,7 @@ Hi! This is a sample of my own portfolio website for our 1st term finals project
 <br/>
 What you'll see here are very basic implementations using HTML and CSS in creating web layouts and JavaScript for content manipulation, which is great for students and beginners who want to learn HTML-CSS-JS fundamentals.
 
-## [See the website.]()
+## [See the website.](https://mahyellaw.github.io/ITCL-web-project/)
 
 ## 🪪 MIT License
 
