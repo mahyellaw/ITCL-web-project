@@ -3,23 +3,30 @@
 .bio {
     text-align: center;
     font-size: 24pt;
+    transition: 0.5s;
 }
 
 .section {
     padding-top: 1rem;
     font-size: 24pt;
+    transition: 0.5s;
 }
 
 .section-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    transition: 0.5s;
 }
 
 .section-grid > a > img {
     border: 4px solid #fad42d;
     border-radius: 8px;
     transition: 0.25s;
+}
+.game-description, .art-description, .palette-description {
+    display: none;
+    text-align: center;
 }
 .section-grid > a > img:hover {
     border: 8px solid #c77100;

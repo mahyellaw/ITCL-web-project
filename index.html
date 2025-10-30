@@ -1,105 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Mahyellaw Studios!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Mahyellaw Studios!</title>
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/home.css">
+    </head>
+    <body>
+        
+        <header>
+            <div class="logo">
+                <img src="assets/banner.gif" alt="A logo of Mahyellaw." class="logo-img" width="1280px" height="360px">
+            </div>
+            <div class="tagline">
+                <h1>the four-eyed game dev & pixel artist.</h1>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="sections/about.html">ABOUT</a>
+                <a href="sections/blog.html">BLOG</a>
+                <a href="sections/contact.html">CONTACT</a>
+            </nav>
+        </header>
 
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <img src="assets/banner.gif" alt="A logo of Mahyellaw." class="logo-img" width="1280px" height="360px">
-        </div>
-        <div class="tagline">
-            <h1>the four-eyed game dev & pixel artist.</h1>
-        </div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="sections/about.html">ABOUT</a>
-            <a href="sections/blog.html">BLOG</a>
-            <a href="sections/contact.html">CONTACT</a>
-        </nav>
-    </header>
+        <div class="content">
+            <div class="bio">
+                <p>
+                    Hi! I'm Mahyellaw, also known as MJ, a game pixel artist and developer hobbyist from the Philippines.
+                    <br><br>
+                    I make games, pixel artworks, retro color palettes, and even a little web design myself. :)
+                </p>
+            </div>
 
-    <div class="content">
-        <div class="bio">
-            <p>
-                Hi! I'm Mahyellaw, also known as MJ, a game pixel artist and developer hobbyist from the Philippines.
-                <br><br>
-                I make games, pixel artworks, retro color palettes, and even a little web design myself. :)
-            </p>
-        </div>
+            <div class="section" id="games">
+                <h1>
+                    <hr>
+                    FEATURED GAMES
+                    <hr>
+                </h1>
+                <div class="section-grid" id="games">
+                    <a target="_blank" href="https://mahyellaw.itch.io/baby-sitter">
+                        <img onmouseover="toggleDescription(true, 'Baby Sitter', 'Your parent just about had enough of working as a company intern.<br>Their age has regressed due to the sheer amount of burnout. Oh, and your rent is due this Friday.<br>So take care of your parent, have them make money, and be a good baby!')" onmouseout="toggleDescription(false)" src="https://img.itch.zone/aW1nLzEyNzQyMTk4LnBuZw==/315x250%23c/Q%2BL1Rc.png" width="480px" height="360px">
+                    </a>
+                    <a target="_blank" href="https://mahyellaw.itch.io/cooking-lelang">
+                        <img onmouseover="toggleDescription(true, 'Cooking Lelang', 'Lelang is a great mom with her husband Tatang and their five kids.<br>But one day, he got SICK! Now you have to both run the carinderia and look after your kids until you can pay for Tatang\'s medicine. Good luck!')" onmouseout="toggleDescription(false)" src="https://img.itch.zone/aW1nLzE0MTYyMTExLnBuZw==/315x250%23c/6EYTXD.png" width="480px" height="360px">
+                    </a>
+                    <a target="_blank" href="https://mahyellaw.itch.io/sonis-sari-sari-store">
+                        <img onmouseover="toggleDescription(true, 'Soni\'s Sari-Sari Store', 'Soni\'s going to school this year, but he can\'t afford his tuition yet.<br>Help him out at his sari-sari store by gathering customers for him!<br>See the store enlarge as you level up, buy upgrades and boosts to enhance your quality of life in this Filipinized clicker game.')" onmouseout="toggleDescription(false)" src="https://img.itch.zone/aW1nLzE3NDMyMTg2LnBuZw==/315x250%23c/FGGHcZ.png" width="480px" height="360px">
+                    </a>
+                </div>
+                <div class="game-description" id="game-description">
+                    <h2>
+                        GAME TITLE
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
 
-        <div class="section" id="games">
-            <h1>
+            <div class="section" id="pixel-artworks">
+                <h1>
+                    <hr>
+                    FEATURED PIXEL ART
+                    <hr>
+                </h1>
+                <div class="section-grid" id="pixel-artworks">
+                    <a target="_blank" href="https://www.artstation.com/artwork/BkmqAz">
+                        <img onmouseover="toggleDescription(true, 'Jonkiez (2024)', '', 'art')" onmouseout="toggleDescription(false,'','','art')" src="https://m.gjcdn.net/fireside-post-image/800/35165768-ll-x5nubxhf-v4.webp" width="480px" height="480px">
+                    </a>
+                    <a target="_blank" href="https://www.artstation.com/artwork/AZryJW">
+                        <img onmouseover="toggleDescription(true, 'Ronaldo\'s Tapsilogan (2024)', '', 'art')" onmouseout="toggleDescription(false,'','','art')" src="https://m.gjcdn.net/fireside-post-image/800/35699162-ll-p8wq7qsj-v4.webp" width="480px" height="480px">
+                    </a>
+                    <a target="_blank" href="https://www.artstation.com/artwork/3EdN9g">
+                        <img onmouseover="toggleDescription(true, 'Kola (2024)', '', 'art')" onmouseout="toggleDescription(false,'','','art')" src="https://m.gjcdn.net/fireside-post-image/400/35541894-ll-xrgivstm-v4.webp" width="480px" height="480px">
+                    </a>
+                </div>
+                <div class="art-description" id="art-description">
+                    <h2>
+                        ART TITLE
+                    </h2>
+                </div>
+            </div>
+
+            <div class="section" id="palettes">
+                <h1>
+                    <hr>
+                    FEATURED COLOR PALETTES
+                    <hr>
+                </h1>
+                <div class="section-grid" id="palettes">
+                    <a target="_blank" href="https://lospec.com/palette-list/razz-candy">
+                        <img onmouseover="toggleDescription(true, 'Razzy Candy (2023)', '', 'palette')" onmouseout="toggleDescription(false, '','', 'palette')" src="https://m.gjcdn.net/fireside-post-image/800/24045232-ll-shudhd2g-v4.webp" width="480px" height="480px">
+                    </a>
+                    <a target="_blank" href="https://lospec.com/palette-list/orsage">
+                        <img onmouseover="toggleDescription(true, 'Orsage (2023)', '', 'palette')" onmouseout="toggleDescription(false, '','', 'palette')" src="https://m.gjcdn.net/fireside-post-image/800/23699523-yrqbupah-v4.webp" width="480px" height="480px">
+                    </a>
+                    <a target="_blank" href="https://lospec.com/palette-list/rettiepunk">
+                        <img onmouseover="toggleDescription(true, 'Rettie Punk (2023)', '', 'palette')" onmouseout="toggleDescription(false, '','', 'palette')" src="https://m.gjcdn.net/fireside-post-image/800/24921832-snec5ssq-v4.webp" width="480px" height="480px">
+                    </a>
+                </div>
+                <div class="palette-description" id="palette-description">
+                        <h2>
+                            PALETTE TITLE
+                        </h2>
+                    </div>
                 <hr>
-                GAMES
-                <hr>
-            </h1>
-            <div class="section-grid" id="games">
-                <a target="_blank" href="https://mahyellaw.itch.io/baby-sitter">
-                    <img src="https://img.itch.zone/aW1nLzEyNzQyMTk4LnBuZw==/315x250%23c/Q%2BL1Rc.png" width="480px" height="360px">
-                </a>
-                <a target="_blank" href="https://mahyellaw.itch.io/cooking-lelang">
-                    <img src="https://img.itch.zone/aW1nLzE0MTYyMTExLnBuZw==/315x250%23c/6EYTXD.png" width="480px" height="360px">
-                </a>
-                <a target="_blank" href="https://mahyellaw.itch.io/sonis-sari-sari-store">
-                    <img src="https://img.itch.zone/aW1nLzE3NDMyMTg2LnBuZw==/315x250%23c/FGGHcZ.png" width="480px" height="360px">
-                </a>
             </div>
         </div>
 
-        <div class="section" id="pixel-artworks">
-            <h1>
+        <footer>
+            <div class="footer-container">
                 <hr>
-                PIXEL ART
-                <hr>
-            </h1>
-            <div class="section-grid" id="pixel-artworks">
-                <a target="_blank" href="https://www.artstation.com/artwork/BkmqAz">
-                    <img src="https://m.gjcdn.net/fireside-post-image/800/35165768-ll-x5nubxhf-v4.webp" width="480px" height="480px">
-                </a>
-                <a target="_blank" href="https://www.artstation.com/artwork/AZryJW">
-                    <img src="https://m.gjcdn.net/fireside-post-image/800/35699162-ll-p8wq7qsj-v4.webp" width="480px" height="480px">
-                </a>
-                <a target="_blank" href="https://www.artstation.com/artwork/3EdN9g">
-                    <img src="https://m.gjcdn.net/fireside-post-image/400/35541894-ll-xrgivstm-v4.webp" width="480px" height="480px">
-                </a>
+                Mahyellaw Studios 2021. All rights reserved.
             </div>
-        </div>
+        </footer>
 
-        <div class="section" id="palettes">
-            <h1>
-                <hr>
-                COLOR PALETTES
-                <hr>
-            </h1>
-            <div class="section-grid" id="palettes">
-                <a target="_blank" href="https://lospec.com/palette-list/razz-candy">
-                    <img src="https://m.gjcdn.net/fireside-post-image/800/24045232-ll-shudhd2g-v4.webp" width="480px" height="480px">
-                </a>
-                <a target="_blank" href="https://lospec.com/palette-list/orsage">
-                    <img src="https://m.gjcdn.net/fireside-post-image/800/23699523-yrqbupah-v4.webp" width="480px" height="480px">
-                </a>
-                <a target="_blank" href="https://lospec.com/palette-list/rettiepunk">
-                    <img src="https://m.gjcdn.net/fireside-post-image/800/24921832-snec5ssq-v4.webp" width="480px" height="480px">
-                </a>
-            </div>
-            <hr>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-container">
-            <hr>
-            Mahyellaw Studios 2021. All rights reserved.
-        </div>
-    </footer>
-
-</body>
+    </body>
+    <script src="scripts/home.js"></script>
 </html>

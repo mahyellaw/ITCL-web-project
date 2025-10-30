@@ -1,5 +1,16 @@
 /* ABOUT PAGE */
 
+.showcase-artist {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.showcase-artist > img{
+    width: 24rem;
+    height: 24rem;
+    box-shadow: 0 0 24px #000000;
+}
+
 .summary {
     font-size: 32pt;
 }
